@@ -1,0 +1,174 @@
+/* Page Title Section */
+.title-section {
+    position: relative; 
+    width: 100%;
+    height: 120px; /* Landscape */
+    overflow: hidden;
+}
+
+/* Page Title Image */
+.title-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hover effects */
+.title-section img {
+    transition: transform 2s ease;
+}
+
+.title-section:hover img {
+    transform: scale(1.1);
+}
+
+.page-content {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 2; 
+}
+
+.page-title {
+    font-family: 'Poppins',sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    color: #4a4a4a;
+  }
+
+/* Product Filter */
+.filters { /* Availability and Price */
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+/* Filter Title */
+.filter {
+    margin-right: 20px;
+}
+
+/* Availability, Price */
+.filter1, .filter2 {
+    position: relative;
+    margin-right: 20px;
+}
+
+/* Filter Dropdown */
+.dropdown-toggle {
+    text-decoration: none; 
+    color: black;
+    padding: 5px 10px;
+}
+
+.dropdown-menu1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white; 
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 200px;
+    z-index: 10;
+    padding: 10px 0;
+}
+
+/* Dropdown menu appears when filters are hovered */
+.filter1:hover .dropdown-menu1,
+.filter2:hover .dropdown-menu1 {
+    display: block;
+}
+
+.dropdown-menu1 a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.dropdown-menu1 a:hover {
+    background-color: #f0f0f0; 
+    color: #333;
+}
+
+/* Products */
+.container {
+    text-align: center;
+    margin-top: 10px;
+    justify-items: center;
+}
+
+.product-card:hover {
+    transition: transform .1s;
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+  }
+  
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4a2c16; /* Brownish color */
+}
+  
+/* Product section */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 0.3fr); /* Rows of four */
+    gap: 20px; /* Gap each product card */
+    justify-items: center;
+}
+  
+/* Specific product card */
+.product-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    padding: 15px;
+    border-radius: 10px; /* Slightly rounded edges */
+    width: 220px;
+    height: auto; /* dependency on product image and title */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+/* Product */
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+  
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #4a4a4a;
+}
+  
+.product-price {
+    font-size: 15px;
+    color: #4a4a4a;
+    font-weight: bold;
+}
+  

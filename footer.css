@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Line divider */
+.divider1 {
+    height: 0.5px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    background-color: #000000;
+}
+
+/* Message us Section */
+.message-us {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.message-container h3 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+.message-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon img {
+    width: 60px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.icon h3 {
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: #5a4231;
+    font-weight: 700;
+}
+
+/* Message Text Box */
+.message-form {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 430px;
+    height: 115px;
+}
+
+/* Message Text Area */
+.message-form textarea {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    resize: none;
+    outline: none;
+}
+
+.message-form textarea::placeholder {
+    color: #ccc;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Submit Button */
+.message-form .Submit {
+    background-color: #49382A;
+    color: #ffffff;
+    padding: 5px 5px;
+    border: none;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: capitalize;
+    outline: none;
+    border-left: 1px solid #ccc;
+}
+
+.message-form .Submit:hover {
+    background-color: #3a2b1f;
+    transition: background-color 0.3s ease;
+}
+
+.rectangle {
+    height: 80px;
+    width: 100%;
+    background-color: #49382A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle-second {
+    font-family: 'Poppins', sans-serif;
+    height: 40px;
+    width: 100%;
+    background-color: #4A382A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.rectangle-second span {
+    font-size: 9px;
+    padding: 0 20px;
+}
+
+/* Second Line Divider */
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.rectangle a img,
+.rectangle-second a img {
+    margin: 0 10px;
+}
+
+/* Icon images */
+.rectangle img:hover {
+    filter: brightness(0) saturate(100%) invert(52%) sepia(77%) saturate(1015%) hue-rotate(353deg) brightness(98%) contrast(99%);
+}
+
+/* Powered by the Clique */
+.rectangle-second span:hover {
+    color: #FF007F;
+}
+
+.icon-container {
+    display: flex;
+}

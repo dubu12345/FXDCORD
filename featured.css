@@ -1,0 +1,142 @@
+/* Page Title Section */
+.featured-section {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+}
+
+.featured-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    color: white;
+    z-index: 2;
+}
+
+.featured-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Image Styling */
+.feature-img {
+    display: block;
+    margin: 3rem auto 1rem; /* Centers image horizontally */
+    width: 90%; /* Responsive width */
+    max-width: 800px;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.3s ease; 
+}
+
+.feature-img:hover {
+    content: url(images/FeaturedGMA-bw2.png); /* Swap image on hover */
+}
+
+/* Styling for the "Click here" text inside the link */
+a .featured-description {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    color: #007BFF;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 0rem;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover effect for the "Click here" text */
+a .featured-description:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* Description Styling */
+.featured-description {
+    color: #4d3b2b;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 800px;
+}
+
+.featured-description h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 1rem;
+}
+
+.featured-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #222;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+.featured-description p strong {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.featured-description blockquote {
+    font-size: 1rem;
+    font-style: italic;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-left: 4px solid #49382A;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #49382A;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .featured-description {
+        padding: 1rem;
+    }
+
+    .featured-description h2 {
+        font-size: 1.5rem;
+    }
+
+    .featured-description p {
+        font-size: 0.9rem;
+    }
+
+    .featured-description blockquote {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝕱𝖝𝖉𝕮𝖔𝖗𝖉 Homepage</title>
+    <link rel="icon" sizes="50x50" type="image/png" href="images/favicon1.png"> <!-- Favicon -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> <!-- Poppins Font -->
+    <link rel="stylesheet" href="header.css"> <!-- CSS links -->
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+<!-- Header -->
+<header>
+    <nav class="nav-left">
+        <nav class="navbar">
+            <ul class="nav-menu">
+              <li class="nav-item dropdown">
+                <a href="#">Collections</a>
+                <div class="dropdown-menu">
+                  <a href="allproducts.html">All Products</a>
+                  <a href="necklaces.html">Necklaces</a>
+                  <a href="bracelets.html">Bracelets</a>
+                  <a href="anklets.html">Anklets</a>
+                </div>
+            </ul>
+          </nav>
+        <a href="aboutus.html">About Us</a>
+        <a href="featured.html">Featured</a>
+    </nav>
+    <a href="homepage.html">
+        <img src="images/IT100 logo.png" alt="Logo" width="150" height="35" />
+    </a>
+    <div class="user-options">
+        <a href="community.html">Community</a>
+        <a href="shopbag.html">
+            <img src="images/IT100 shop bag.png" alt="Shopping Bag" width="20" height="20" />
+        </a>
+        <a href="sign-up.html">
+            <img src="images/IT100 wht user.png" alt="User" width="21" height="20" />
+        </a>
+    </div>
+</header>
+
+
+<!-- Announcement Section -->
+    <div class="carousel">
+        <div class="carousel-slides">
+          <div class="carousel-slide">
+            <a href="homepage.html">
+            <img src="images/announcement3.png" alt="Slide 1"></a>
+          </div>
+          <div class="carousel-slide">
+            <a href="bracelets.html">
+            <img src="images/announcement1.png" alt="Slide 2"></a>
+          </div>
+          <div class="carousel-slide">
+            <a href="allproducts.html">
+            <img src="images/announcement2.png" alt="Slide 3"></a>
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active" onclick="moveToSlide(0)"></span>
+          <span class="dot" onclick="moveToSlide(1)"></span>
+          <span class="dot" onclick="moveToSlide(2)"></span>
+        </div>
+      </div>
+      
+<!-- Java Script for carousel/sliding -->
+      <script>
+        const slides = document.querySelector('.carousel-slides');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = dots.length;
+        let currentIndex = 0;
+      
+        function moveToSlide(index) {
+          slides.style.transform = `translateX(-${index * 100}%)`; 
+          dots[currentIndex].classList.remove('active'); 
+          dots[index].classList.add('active');
+          currentIndex = index;
+        }
+      
+        function autoSlide() {
+          let nextIndex = (currentIndex + 1) % totalSlides;
+          moveToSlide(nextIndex);
+        }
+      
+        let slideInterval = setInterval(autoSlide, 3000);
+      
+        dots.forEach((dot, index) => {
+          dot.addEventListener('click', () => {
+            clearInterval(slideInterval);
+            moveToSlide(index);
+            slideInterval = setInterval(autoSlide, 3000); 
+          });
+        });
+      </script>
+
+<!-- Collection Section -->
+    <div class="collections">
+        <div class="collections1">  
+            <a href="necklaces.html">
+            <img src="images/IT100 coll1.png" alt="Collection1" /></a>
+        </div>
+        <div class="collections2">
+            <a href="bracelets.html">
+            <img src="images/IT100 coll2.png" alt="Collection2" /></a>
+        </div>
+    </div>
+
+<!-- New Design Showcase -->
+    <h1 class="new-design">NEW DESIGN</h1>
+    <div class="container">
+        <div class="product-grid">
+          <div class="product-card">
+            <a href="ninitial.html">
+            <img src="images/initial pendant.jpg" alt="Product 4">
+            <p class="product-name">Jewel Initial Necklace</p>
+            <p class="product-price">₱148.00</p>
+            </a>
+          </div>
+
+            <div class="product-card">
+                <a href="bvine.html">
+                    <img src="images/IT100 nature ins2.jpg" alt="Product 10">
+                    <p class="product-name">Vine Twist Charm Bracelet</p>
+                    <p class="product-price">₱125.00</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="bheartmac.html">
+                    <img src="images/heart macreme.jpg" alt="Product 1">
+                    <p class="product-name">Heart Macrame in Pink</p>
+                    <p class="product-price">₱180.00</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+<!-- Featured in and Pop-up Events -->
+<h1 class="fnps">FEATURED AND POP-UP STALLS</h1>
+    <div class="slide-up-container">
+      <a href="https://www.facebook.com/share/p/19xf5uGDU3/">
+      <img src="images/featured1.png" height="80px" width="260px" class="center1"></a>
+      <a href="https://www.facebook.com/share/p/15biprCW1r/">
+      <img src="images/featured2.png" height="80px" width="260px" class="center2"></a>
+      <a href="https://www.facebook.com/share/p/19krP5Criv/">
+      <img src="images/featured3.png" height="80px" width="260px" class="center3"></a>
+      <a href="https://www.facebook.com/share/p/17vdQKXHBu/">
+      <img src="images/featured4.png" height="80px" width="260px" class="center4"></a>
+    </div>
+
+<!-- Pop-up Stall Location and Showcase Dates -->
+<div class="gmaps">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d153711.
+    2790844691!2d122.54456418446892!3d10.905802204493076!2m3!1f0!2f0!3f0!3m2!1
+    i1024!2i768!4f13.1!3m3!1m2!1s0x33af19651fe78b83%3A0xa176fed192fb86ab!2sPoto
+    tan%2C%20Iloilo!5e0!3m2!1sen!2sph!4v1733977205053!5m2!1sen!2sph"
+    width="500px"
+    height="300px"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
+
+  <div class="container1">
+    <h1>SHOWCASE DATES</h1>
+    <p>Pototan, Iloilo ——— ——— ——— ——— — December 16, 2024</p>
+    <p>Guimaras ——— ——— ——— ——— — December 18-20, 2024</p>
+    <h2>MORE POP-UP EVENTS</h2>
+    <h2>TO BE ANNOUNCED</h2>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+    <div class="divider1"></div>
+    <section class="message-us">
+        <div class="message-container">
+            <div class="icon">
+                <img src="images/IT100 mail.png" alt="Message Icon">
+                <h3>MESSAGE US</h3>
+            </div>
+            <form class="message-form">
+                <textarea placeholder="Write your message here."></textarea>
+                <button class="Submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <div class="rectangle">
+        <a href="https://www.facebook.com/fxdcordphilippine/">
+            <img src="images/IT100 wht facebook.png" alt="Facebook Logo" width="20" height="20">
+        </a>
+        <a href="https://www.instagram.com/fxdcordlocalcrafts/">
+            <img src="images/IT100 wht instagram.png" alt="Instagram Logo" width="20" height="20">
+        </a>
+        <a href="tel:+639810267713">
+            <img src="images/IT100 phone.png" alt="Phone Number" width="20" height="20">
+        </a>
+    </div>
+    <div class="divider"></div>
+    <div class="rectangle-second">
+        <span>Powered by  The Clique</span>
+</footer>
+</body>
+</html>
